@@ -1,22 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Your Vue.js App!!!" />
     <div>
       <span>{{count}}</span>
       <button @click="handleClick">点击加1</button>
       <div>{{result}}</div>
     </div>
+    <Test :pTest="'pTest123'"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
+import Test from './components/Test';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
+    Test,
   },
   data() {
     return {
